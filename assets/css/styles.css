@@ -1,11 +1,11 @@
 @font-face {
-    font-family: Norse-Bold;
-    src: url(./assets/font/Norse-Bold.otf);
+    font-family: "Norse-Bold";
+    src: url('../font/Norse-Bold.otf');
 }
 #root {
     text-align: center;
     color: red;
     font-size: 50px;
     padding-top: 250px;
-    font-family: "Norse-Bold", sans-serif;
+    font-family: "Norse-Bold";
 }
