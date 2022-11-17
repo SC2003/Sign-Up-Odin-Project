@@ -3,8 +3,8 @@ form.addEventListener('submit', e => {
     const passInputMain = document.querySelector("#password");
     const passInputSecond = document.querySelector("#confirm-password");
     const errorMsg = document.querySelector('.error-msg');
-    const wrongPasswordStyle = "border:4px solid red;";
-    const correctPasswordStyle = "border:4px solid green;"
+    const wrongPasswordStyle = "border:1px solid red;";
+    const correctPasswordStyle = "border:1px solid green;"
     if (passInputMain.value !== passInputSecond.value) {
         e.preventDefault();
         passInputMain.style.cssText = wrongPasswordStyle;
