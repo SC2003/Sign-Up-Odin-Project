@@ -1,11 +1,86 @@
 @font-face {
-    font-family: "Norse-Bold";
+    font-family: 'Norse-Bold';
     src: url('../font/Norse-Bold.otf');
 }
-#root {
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-section-container {
+    display: flex;
+}
+
+.bg-img-container {
+    position: relative;
     text-align: center;
-    color: red;
-    font-size: 50px;
-    padding-top: 250px;
-    font-family: "Norse-Bold";
+    color: white;
+}
+
+.bg-img {
+    height: 100vh;
+    width: 40vw;
+}
+
+.logo-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Norse-Bold', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.logo-img {
+    height: 80px;
+    width: 80px;
+}
+
+.logo-text {
+    font-size: 60px;
+}
+.credits {
+    position: absolute;
+    right: 1px;
+    left: 1px;
+    bottom: 8px;
+    color: white;
+}
+.credits a {
+    text-decoration: underline;
+    color: white;
+}
+/* .form-container {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+} */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.block {
+    display: block;
+}
+input {
+    border: 1px solid #E5E7EB;
+}
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 1px;
+}
+.form-submit-btn {
+    background-color: #596D48;
+    padding: 15px;
+    border-radius: 8px;
 }
