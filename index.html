@@ -14,7 +14,6 @@
         <!-- src="./assets/Images/background-img-640×960.png" night-sky-->
         <img
           class="bg-img"
-          
           src="https://source.unsplash.com/640x960/?nature"
           alt="bg img"
         />
@@ -43,14 +42,19 @@
           </p>
           <p class="text-second">You <i>know</i> you want to.</p>
         </div>
-        <form action="#" method="get" class="form">
+        <form action="" method="get" class="form">
           <div class="form-inputs-container">
             <div class="form-fieldset">
               <h2 class="form-legend">Let's do this!</h2>
               <div class="input-container name-input-container">
                 <div class="block">
-                  <label for="first-name">First Name</label>
-                  <input type="text" name="first-name" id="first-name" />
+                  <label for="first-name">First Name*</label>
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    required
+                  />
                 </div>
                 <div class="block">
                   <label for="last-name">Last Name</label>
@@ -59,8 +63,8 @@
               </div>
               <div class="input-container email-number-container">
                 <div class="block">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" id="email" />
+                  <label for="email">Email*</label>
+                  <input type="email" name="email" id="email" required />
                 </div>
                 <div class="block">
                   <label for="phone-number">Phone Number</label>
@@ -69,24 +73,27 @@
               </div>
               <div class="input-container password-container">
                 <div class="block">
-                  <label for="password">Password</label>
+                  <label for="password">Password*</label>
                   <input
                     type="password"
                     name="password"
                     id="password"
                     minlength="6"
+                    required
                   />
                 </div>
                 <div class="block">
-                  <label for="conform-password">Conform Password</label>
+                  <label for="confirm-password">Confirm Password*</label>
                   <input
                     type="password"
-                    name="conform-password"
-                    id="conform-password"
+                    name="confirm-password"
+                    id="confirm-password"
                     minlength="6"
+                    required
                   />
                 </div>
               </div>
+              <span class="error-msg"></span>
             </div>
           </div>
           <div class="submit-btn-container">

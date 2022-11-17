@@ -1,14 +1,23 @@
-const checkPassword = () => {
+const form = document.querySelector('form');
+form.addEventListener('submit', e => {
     const passInputMain = document.querySelector("#password");
-    const passInputSecond = document.querySelector("#conform-password");
-    if (passInputMain !== passInputSecond) {
-        console.log("both passwords dont match");
-        // console.log(passInputMain.value);
-        // console.log(passInputSecond.value);
+    const passInputSecond = document.querySelector("#confirm-password");
+    const errorMsg = document.querySelector('.error-msg');
+    const wrongPasswordStyle = "border:4px solid red;";
+    const correctPasswordStyle = "border:4px solid green;"
+    if (passInputMain.value !== passInputSecond.value) {
+        e.preventDefault();
+        passInputMain.style.cssText = wrongPasswordStyle;
+        passInputSecond.style.cssText = wrongPasswordStyle;
+        errorMsg.textContent = `*Passwords do not match`;
+        errorMsg.style.cssText = "color:red;"
+        setTimeout(() => {
+            errorMsg.textContent = '';
+            passInputMain.style.cssText = '';
+            passInputSecond.style.cssText = '';
+        }, 4_000);
     } else {
-        console.log("both passwords match");
-        // console.log(passInputMain.value);
-        // console.log(passInputSecond.value);
+        passInputMain.style.cssText = correctPasswordStyle;
+        passInputSecond.style.cssText = correctPasswordStyle;
     }
-}
-// checkPassword();
+});
