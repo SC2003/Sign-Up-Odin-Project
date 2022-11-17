@@ -48,7 +48,7 @@ body {
     font-family: 'Norse-Bold', sans-serif;
     background-color: rgba(0, 0, 0, 0.5);
     color: rgb(255, 255, 255);
-    padding: 0px calc(640px - 10vw) 0vw ;
+    padding: 0px 10vw 0vw ;
     overflow: hidden;
 }
 
