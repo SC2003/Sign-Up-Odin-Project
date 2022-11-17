@@ -11,16 +11,16 @@
   <body>
     <main class="main-section-container">
       <div class="bg-img-container">
+        <!-- src="./assets/Images/background-img-640×960.png" night-sky-->
         <img
           class="bg-img"
-          src="./assets/Images/background-img-640×960.png"
+          
+          src="https://source.unsplash.com/640x960/?nature"
           alt="bg img"
         />
         <div class="credits">
           <span>
-            Photo by
-            <a href="https://unsplash.com/@haliewestphoto">Hallie West</a>
-            on
+            Random Image by
             <a href="https://unsplash.com/">Unsplash</a>
           </span>
         </div>
@@ -44,46 +44,48 @@
           <p class="text-second">You <i>know</i> you want to.</p>
         </div>
         <form action="#" method="get" class="form">
-          <div class="form-fiedlset">
-            <h2 class="form-legend">Let's do this!</h2>
-            <div class="input-container name-input-container">
-              <div class="block">
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name" />
+          <div class="form-inputs-container">
+            <div class="form-fieldset">
+              <h2 class="form-legend">Let's do this!</h2>
+              <div class="input-container name-input-container">
+                <div class="block">
+                  <label for="first-name">First Name</label>
+                  <input type="text" name="first-name" id="first-name" />
+                </div>
+                <div class="block">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" name="last-name" id="last-name" />
+                </div>
               </div>
-              <div class="block">
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name" />
+              <div class="input-container email-number-container">
+                <div class="block">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div class="block">
+                  <label for="phone-number">Phone Number</label>
+                  <input type="tel" name="phone-number" id="phone-number" />
+                </div>
               </div>
-            </div>
-            <div class="input-container email-number-container">
-              <div class="block">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
-              </div>
-              <div class="block">
-                <label for="phone-number">Phone Number</label>
-                <input type="tel" name="phone-number" id="phone-number" />
-              </div>
-            </div>
-            <div class="input-container password-container">
-              <div class="block">
-                <label for="password">Password</label>
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  minlength="6"
-                />
-              </div>
-              <div class="block">
-                <label for="conform-password">Conform Password</label>
-                <input
-                  type="password"
-                  name="conform-password"
-                  id="conform-password"
-                  minlength="6"
-                />
+              <div class="input-container password-container">
+                <div class="block">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    minlength="6"
+                  />
+                </div>
+                <div class="block">
+                  <label for="conform-password">Conform Password</label>
+                  <input
+                    type="password"
+                    name="conform-password"
+                    id="conform-password"
+                    minlength="6"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -91,7 +93,9 @@
             <button class="form-submit-btn" type="submit">
               Create Account
             </button>
-            <p class="acc-text">Already have an Account? <a href="#">Log in</a></p>
+            <p class="acc-text">
+              Already have an Account? <a href="#">Log in</a>
+            </p>
           </div>
         </form>
       </div>
