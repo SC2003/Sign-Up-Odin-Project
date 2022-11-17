@@ -19,10 +19,9 @@
         <div class="credits">
           <span>
             Photo by
-            <a href="https://unsplash.com/@haliewestphoto">Hallie West</a> on<a
-              href="https://unsplash.com/"
-              >Unsplash</a
-            >
+            <a href="https://unsplash.com/@haliewestphoto">Hallie West</a>
+            on
+            <a href="https://unsplash.com/">Unsplash</a>
           </span>
         </div>
         <div class="logo-container">
@@ -36,17 +35,18 @@
       </div>
       <div class="form-container">
         <div class="form-text-container">
-          <p>
+          <p class="text-first">
             This is not a real online service! You know you need something like
             in your life to help you realize your deepest dreams.
+            <br />
+            Sign up <i>now</i> to get started.
           </p>
-          <p>Sign up <i>now</i> to get started.</p>
-          <p>You <i>know</i> you want to.</p>
+          <p class="text-second">You <i>know</i> you want to.</p>
         </div>
-        <form action="" method="get" class="form">
+        <form action="#" method="get" class="form">
           <div class="form-fiedlset">
             <h2 class="form-legend">Let's do this!</h2>
-            <div class="name-input-container">
+            <div class="input-container name-input-container">
               <div class="block">
                 <label for="first-name">First Name</label>
                 <input type="text" name="first-name" id="first-name" />
@@ -56,7 +56,7 @@
                 <input type="text" name="last-name" id="last-name" />
               </div>
             </div>
-            <div class="email-number-container">
+            <div class="input-container email-number-container">
               <div class="block">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" />
@@ -66,10 +66,15 @@
                 <input type="tel" name="phone-number" id="phone-number" />
               </div>
             </div>
-            <div class="password-container">
+            <div class="input-container password-container">
               <div class="block">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" min="6" />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  minlength="6"
+                />
               </div>
               <div class="block">
                 <label for="conform-password">Conform Password</label>
@@ -77,14 +82,16 @@
                   type="password"
                   name="conform-password"
                   id="conform-password"
-                  min="6"
+                  minlength="6"
                 />
               </div>
             </div>
+          </div>
+          <div class="submit-btn-container">
             <button class="form-submit-btn" type="submit">
               Create Account
             </button>
-            <p>Already have an Account? <a href="#">Log in</a></p>
+            <p class="acc-text">Already have an Account? <a href="#">Log in</a></p>
           </div>
         </form>
       </div>
